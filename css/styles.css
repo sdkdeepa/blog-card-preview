@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "figTree bolder";
+    src: url("./../assets/fonts/static/Figtree-ExtraBold.ttf");
+  }
+  
+  @font-face {
+    font-family: "figTree semi";
+    src: url("./../assets/fonts/static/Figtree-SemiBold.ttf");
+  }
+
+:root {
+    /* colors */
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+  }
+body {
+    background-color: var(--Yellow);
+    display: grid;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+  }
+
+
+h3 {
+    font-family: "figTree bolder";
+    font-size: 1.2rem;
+}
+
+h3:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+h4{
+
+    font-family: "figTree bolder";
+}
+.paragraph-text {
+        color: var(--Grey);
+}
+
+.card {
+    background-color: var(--White);
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px;
+    border: 1px solid var(--Black);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.button{
+    color: var(--Black);
+    font-family: "figTree bolder";
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: var(--Yellow);
+    border: none;
+}
+
+.date{
+    font-family: "figTree semi";
+    margin-top: 8px;
+  }
+
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar img {
+    width: 35px;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 85%;
+        margin: 20px;
+        padding: 8px;
+    }
+    
+    .card-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
